@@ -12,7 +12,20 @@ import java.net.InetSocketAddress;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+/**
+ * ProductServer
+ * A simple HTTP server for handling product-related requests.
+ * This server listens on port 9080 and provides endpoints for:
+ * - GET /products/sku
+ * - GET /products/name
+ * - GET /products/price
+ * - POST /products
+ * - PUT /products/product
+ * - PUT /products/details
+ * @author Nikhil Dhanji
+ * @version 1.0
+ * @since 2024-06-15
+ */
 public class ProductServer {
     private static final Logger logger = LogManager.getLogger(ProductServer.class);
     private final Gson gson;
