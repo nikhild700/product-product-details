@@ -1,0 +1,35 @@
+# Maven build output
+target/
+
+# Logs
+logs/
+*.log
+
+# VS Code settings
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS junk
+.DS_Store
+
+# Java
+*.class
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# H2 / SQLite / Derby local DB files (if ever used)
+*.db
+*.mv.db
+*.trace.db
+
+# Shell scripts output
+*.out
+
+# Ignore compiled test output
+surefire-reports/
