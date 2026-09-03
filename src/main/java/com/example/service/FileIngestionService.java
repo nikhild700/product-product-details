@@ -49,8 +49,8 @@ public class FileIngestionService {
         return chunks;
     }
 
-    public void processFileMultiThread() throws Exception {
-        Path path = Paths.get("data/products.txt");
+    public void processFileMultiThread(String filePath) throws Exception {
+        Path path = Paths.get(filePath);
 
         List<List<CreateProductDTO>> chunks = splitIntoChunks(path, 10000);
 
